@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+  --main-font: "Source Sans Pro", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+  --main-font-color: #515151;
+  --main-font-color-dark: rgb(38, 38, 38);
+  --secondary-font-color: #0265FC;
+  --main-font-size: clamp(0.75rem, 2vw, 1.75rem);
+}
+
+html {
+  font-family: var(--body-font);
+  font-size: 1.1rem;
+  color: var(--main-font-color);
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: clamp(0.75rem, 1.25vw, 1.75rem);
+  background: #fff;
+  padding: 0 3rem;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+}
+body header img {
+  align-self: center;
+  cursor: pointer;
+  height: 4rem;
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+body header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  display: flex;
+  list-style: none;
+}
+body header nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+body header nav ul li:hover {
+  color: var(--secondary-font-color);
+}
+body header nav ul li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120%;
+  height: 2px;
+  background-color: var(--secondary-font-color);
+}
+body main .section_search h1 {
+  font-size: var(--main-font-size);
+  color: var(--main-font-color-dark);
+}
+body main .section_search .searchbar {
+  display: flex;
+  width: 30rem;
+  margin: 1.5rem 0;
+  border-radius: 1.2rem;
+  border: 1px solid #ddd;
+}
+body main .section_search .searchbar .search_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-font-color-dark);
+  width: 15%;
+  padding: 0.8rem 0.9rem;
+  border-radius: 1.2rem 0 0 1.2rem;
+  background-color: #ddd;
+}
+body main .section_search .searchbar input {
+  padding: 0.8rem 0.9rem;
+  width: 60%;
+  border: none;
+  color: var(--main-font-color-dark);
+  font-size: 1.25rem;
+  font-weight: 600;
+  outline: none;
+}
+body main .section_search .searchbar .search_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 25%;
+  border-radius: 0 1.2rem 1.2rem 0;
+  padding: 0.8rem 0.9rem;
+  background: var(--secondary-font-color);
+  cursor: pointer;
+}
+body main .section_filters {
+  display: flex;
+  align-items: center;
+  color: var(--main-font-color-dark);
+}
+body main .section_filters .filters_list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+body main .section_filters .filters_list .filters_item {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 1.25rem;
+}
+body main .section_filters .filters_list .filters_item i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 1.15rem;
+  background-color: #cde1ff;
+  color: var(--secondary-font-color);
+  border-radius: 100%;
+}
+body main .section_filters .filters_list .filters_item div {
+  padding: 0 0.75rem;
+  font-weight: 600;
+}/*# sourceMappingURL=styles.css.map */
