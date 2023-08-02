@@ -16,7 +16,8 @@
   --main-font-color: #515151;
   --main-font-color-dark: rgb(38, 38, 38);
   --secondary-font-color: #0265FC;
-  --main-font-size: clamp(0.75rem, 2vw, 1.75rem);
+  --h1-font-size: clamp(0.9rem, 2.3vw, 1.5rem);
+  --h2-font-size: clamp(0.75rem, 1.75vw, 1.2rem);
 }
 
 html {
@@ -28,7 +29,6 @@ html {
 
 body {
   overflow-x: hidden;
-  font-size: clamp(0.75rem, 1.25vw, 1.75rem);
   background: #fff;
   padding: 0 3rem;
 }
@@ -74,9 +74,12 @@ body header nav ul li::after {
   height: 2px;
   background-color: var(--secondary-font-color);
 }
-body main .section_search h1 {
-  font-size: var(--main-font-size);
+body main h1 {
+  font-size: var(--h1-font-size);
   color: var(--main-font-color-dark);
+}
+body main h2 {
+  font-size: var(--h2-font-size);
 }
 body main .section_search .searchbar {
   display: flex;
@@ -124,11 +127,12 @@ body main .section_filters .filters_list {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  gap: 1.5rem;
+  margin-left: 1.5rem;
 }
 body main .section_filters .filters_list .filters_item {
   display: flex;
   align-items: center;
-  margin-left: 1.5rem;
   border: 1px solid #ddd;
   border-radius: 1.25rem;
 }
@@ -146,4 +150,70 @@ body main .section_filters .filters_list .filters_item i {
 body main .section_filters .filters_list .filters_item div {
   padding: 0 0.75rem;
   font-weight: 600;
+}
+body main .info {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+body main .info i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+  color: var(--secondary-font-color);
+  border: solid 1px #ddd;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+}
+body main .section_accommodations {
+  display: flex;
+  width: 100%;
+  margin: 2rem 0;
+  gap: 3rem;
+}
+body main .section_accommodations .accommodations_container {
+  width: 60%;
+  background-color: #ddd;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+body main .section_accommodations .accommodations_container .accommodations_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+body main .section_accommodations .accommodations_container .accommodations_grid .grid_item {
+  width: 100%;
+  height: 20rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 0.3rem;
+}
+body main .section_accommodations .accommodations_container .accommodations_grid .grid_item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 60%;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+body main .section_accommodations .accommodations_container .accommodations_grid .grid_item .details {
+  padding: 0 0.5rem;
+}
+body main .section_accommodations .accommodations_container .accommodations_grid .grid_item .details .price {
+  font-weight: 600;
+}
+body main .section_accommodations .popular_container {
+  width: 30%;
+  background-color: #ddd;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+body main .section_accommodations .popular_container .popular_list {
+  list-style: none;
 }/*# sourceMappingURL=styles.css.map */
