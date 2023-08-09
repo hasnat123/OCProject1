@@ -12,8 +12,8 @@
         <img src="assets/images/logo/Booki.png" alt="Logo">
         <nav>
             <ul>
-                <li>Accomodations</li>
-                <li>Activities</li>
+                <li><a href="#section_accommodations">Accomodations</a></li>
+                <li><a href="#section_activities">Activities</a></li>
             </ul>
         </nav>
     </header>
@@ -23,8 +23,8 @@
             <p>Downtown or in nature</p>
             <div class="searchbar">
                 <div class="search_icon"><i class="fa-solid fa-location-dot"></i></div>
-                <input type="text">
-                <div class="search_btn">Search</ class="search_btn">
+                <form><input type="text" name="search"/></form>
+                <div class="search_btn"><i class="fa-solid fa-magnifying-glass"></i><p>Search</p></div>
             </div>
         </section>
         <section class="section_filters">
@@ -37,148 +37,242 @@
             </ul>
         </section>
         <div class="info"><i class="fa-solid fa-info"></i><p>More than 500 accomodations are available in this city</p></div>
-        <section class="section_accommodations">
+        <section id="section_accommodations">
             <article class="accommodations_container">
                 <header><h1>Accommodations in Marseille</h1></header>
                 <div class="accommodations_grid">
-                    <div class="grid_item">
-                        <img src="assets/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
-                        <div class="details">
-                            <h2>Auberge La Cannebiere</h2>
-                            <p>Night starting at <span class="price">£25</span></p>
-                            <ul class="ratings_container">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                            </ul>
-                        </div>
+                    <div class="row">
+                        <a href="#">
+                            <div class="grid_item">
+                                <img src="assets/images/hebergements/4_small/auberge-la-cannebiere.jpg" alt="">
+                                <div class="details">
+                                    <h2>Auberge La Cannebiere</h2>
+                                    <p>Night starting at <span class="price">£25</span></p>
+                                    <ul class="ratings_container">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="grid_item">
+                                <img src="assets/images/hebergements/4_small/hotel-du-port.jpg" alt="">
+                                <div class="details">
+                                    <h2>Hotel du port</h2>
+                                    <p>Night starting at <span class="price">£52</span></p>
+                                    <ul class="ratings_container">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="grid_item">
+                                <img src="assets/images/hebergements/4_small/les-mouettes-hotel.jpg" alt="">
+                                <div class="details">
+                                    <h2>Les mouettes Hotel</h2>
+                                    <p>Night starting at <span class="price">£76</span></p>
+                                    <ul class="ratings_container">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="grid_item">
-                        <img src="assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
-                        <div class="details">
-                            <h2>Auberge La Cannebiere</h2>
-                            <p>Night starting at <span class="price">£25</span></p>
-                            <ul class="ratings_container">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="grid_item">
-                        <img src="assets/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
-                        <div class="details">
-                            <h2>Auberge La Cannebiere</h2>
-                            <p>Night starting at <span class="price">£25</span></p>
-                            <ul class="ratings_container">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="grid_item">
-                        <img src="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
-                        <div class="details">
-                            <h2>Auberge La Cannebiere</h2>
-                            <p>Night starting at <span class="price">£25</span></p>
-                            <ul class="ratings_container">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="grid_item">
-                        <img src="assets/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
-                        <div class="details">
-                            <h2>Auberge La Cannebiere</h2>
-                            <p>Night starting at <span class="price">£25</span></p>
-                            <ul class="ratings_container">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="grid_item">
-                        <img src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                        <div class="details">
-                            <h2>Auberge La Cannebiere</h2>
-                            <p>Night starting at <span class="price">£25</span></p>
-                            <ul class="ratings_container">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                            </ul>
-                        </div>
+                    <div class="row">
+                        <a href="#">
+                            <div class="grid_item">
+                                <img src="assets/images/hebergements/4_small/hotel-de-la-mer.jpg" alt="">
+                                <div class="details">
+                                    <h2>Hotel de la mer</h2>
+                                    <p>Night starting at <span class="price">£46</span></p>
+                                    <ul class="ratings_container">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="grid_item">
+                                <img src="assets/images/hebergements/4_small/auberge-le-panier.jpg" alt="">
+                                <div class="details">
+                                    <h2>Auberge Le Panier</h2>
+                                    <p>Night starting at <span class="price">£23</span></p>
+                                    <ul class="ratings_container">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="grid_item">
+                                <img src="assets/images/hebergements/4_small/hotel-chez-amina.jpg" alt="">
+                                <div class="details">
+                                    <h2>Hotel chez Amina</h2>
+                                    <p>Night starting at <span class="price">£96</span></p>
+                                    <ul class="ratings_container">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <h2>Show more</h2>
+                <h2 id="show_more">Show more</h2>
             </article>
             <aside class="popular_container">
                 <div class="header_container"><h1>Most Popular</h1><i class="fa-solid fa-star"></i></div>
                 <ul class="popular_list">
                     <li class="list_item">
-                        <img src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                        <div class="details">
-                            <h2>Auberge La Cannebiere</h2>
-                            <p>Night starting at <span class="price">£25</span></p>
-                            <ul class="ratings_container">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                            </ul>
-                        </div>
+                        <a href="#">
+                            <img src="assets/images/hebergements/4_small/morning-sun-hotel.jpg" alt="">
+                            <div class="details">
+                                <div class="title">
+                                    <h2>Morning Sun Hotel</h2>
+                                    <p>Night starting at <span class="price">£128</span></p>
+                                </div>
+                                <ul class="ratings_container">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </a>
                     </li>
                     <li class="list_item">
-                        <img src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                        <div class="details">
-                            <h2>Auberge La Cannebiere</h2>
-                            <p>Night starting at <span class="price">£25</span></p>
-                            <ul class="ratings_container">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                            </ul>
-                        </div>
+                        <a href="#">
+                            <img src="assets/images/hebergements/4_small/au-coeur-de-leau-bed-and-breakfast.jpg" alt="">
+                            <div class="details">
+                                <div class="title">
+                                    <h2>Au Coeur de l'eau Bed and Breakfast</h2>
+                                    <p>Night starting at <span class="price">£71</span></p>
+                                </div>
+                                <ul class="ratings_container">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </a>
                     </li>
                     <li class="list_item">
-                        <img src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                        <div class="details">
-                            <h2>Auberge La Cannebiere</h2>
-                            <p>Night starting at <span class="price">£25</span></p>
-                            <ul class="ratings_container">
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                            </ul>
-                        </div>
+                        <a href="#">
+                            <img src="assets/images/hebergements/4_small/tout-blue-et-blanc-hotel.jpg" alt="">
+                            <div class="details">
+                                <div class="title">
+                                    <h2>Tout bleu et Blanc Hotel</h2>
+                                    <p>Night starting at <span class="price">£68</span></p>
+                                </div>
+                                <ul class="ratings_container">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </aside>
         </section>
+        <section id="section_activities">
+            <article>
+                <header><h1>Activities in Marseille</h1></header>
+                <ul class="activities_container">
+                    <li>
+                        <a href="#">
+                            <div class="list_item">
+                                <div class="image_container"><img src="assets/images/activites/4_small/old-port.jpg" alt=""></div>
+                                <div class="details"><h2>Old Port</h2></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="large">
+                            <div class="list_item">
+                                <div class="image_container"><img src="assets/images/activites/4_small/pomegues-fort.jpg" alt=""></div>
+                                <div class="details"><h2>Pomegues Fort</h2></div>
+                            </div>
+                        </a>
+                        <a href="#" class="small">
+                            <div class="list_item">
+                                <div class="image_container"><img src="assets/images/activites/4_small/frioul-island.jpg" alt=""></div>
+                                <div class="details"><h2>Frioul Island</h2></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="list_item">
+                                <div class="image_container"><img src="assets/images/activites/4_small/calanques-national-park.jpg" alt=""></div>
+                                <div class="details"><h2>Calanques National Park</h2></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="small">
+                            <div class="list_item">
+                                <div class="image_container"><img src="assets/images/activites/4_small/notre-dame-de-la-garde.jpg" alt=""></div>
+                                <div class="details"><h2>Notre-Dame-de-la-Garde</h2></div>
+                            </div>
+                        </a>
+                        <a href="#" class="large">
+                            <div class="list_item">
+                                <div class="image_container"><img src="assets/images/activites/4_small/longchamp-park.jpg" alt=""></div>
+                                <div class="details"><h2>Longchamp Park</h2></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
     </main>
-    <footer>
-
-    </footer>
+    <!-- <footer>
+        <ul>
+            <li><h2>About</h2></li>
+            <li>Site Map</li>
+            <li>General Terms and Conditions</li>
+            <li>Data and Privacy</li>
+        </ul>
+        <ul>
+            <li><h2>Our Accommodations</h2></li>
+            <li>Quality Assessment</li>
+            <li>Youb have a hotel?</li>
+        </ul>
+        <ul>
+            <li><h2>Assistance</h2></li>
+            <li>Help Desk</li>
+            <li>Contact Us</li>
+        </ul>
+    </footer> -->
 </body>
 </html>
