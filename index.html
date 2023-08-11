@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/ad21439194.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class="main_header">
         <img src="assets/images/logo/Booki.png" alt="Logo">
         <nav>
             <ul>
@@ -43,10 +43,15 @@
                 <div class="accommodations_grid">
                     <div class="row">
                         <a href="#">
-                            <div class="grid_item">
-                                <img src="assets/images/hebergements/4_small/auberge-la-cannebiere.jpg" alt="">
+                            <article class="grid_item">
+                                <img
+                                    src="assets/images/hebergements/4_small/auberge-la-cannebiere.webp"
+                                    srcset="assets/images/hebergements/4_small/auberge-la-cannebiere.webp 330w,
+                                            assets/images/hebergements/3_medium/auberge-la-cannebiere.webp 720w"
+                                    alt="Auberge La Cannebiere"
+                                >
                                 <div class="details">
-                                    <h2>Auberge La Cannebiere</h2>
+                                    <header><h2>Auberge La Cannebiere</h2></header>
                                     <p>Night starting at <span class="price">£25</span></p>
                                     <ul class="ratings_container">
                                         <li><i class="fa-solid fa-star"></i></li>
@@ -56,13 +61,13 @@
                                         <li><i class="fa-solid fa-star"></i></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </article>
                         </a>
                         <a href="#">
-                            <div class="grid_item">
-                                <img src="assets/images/hebergements/4_small/hotel-du-port.jpg" alt="">
+                            <article class="grid_item">
+                                <img src="assets/images/hebergements/4_small/hotel-du-port.webp" alt="Hotel du port">
                                 <div class="details">
-                                    <h2>Hotel du port</h2>
+                                    <header><h2>Hotel du port</h2></header>
                                     <p>Night starting at <span class="price">£52</span></p>
                                     <ul class="ratings_container">
                                         <li><i class="fa-solid fa-star"></i></li>
@@ -72,13 +77,13 @@
                                         <li><i class="fa-solid fa-star"></i></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </article>
                         </a>
                         <a href="#">
-                            <div class="grid_item">
-                                <img src="assets/images/hebergements/4_small/les-mouettes-hotel.jpg" alt="">
+                            <article class="grid_item">
+                                <img src="assets/images/hebergements/4_small/les-mouettes-hotel.webp" alt="Les mouettes Hotel">
                                 <div class="details">
-                                    <h2>Les mouettes Hotel</h2>
+                                    <header><h2>Les mouettes Hotel</h2></header>
                                     <p>Night starting at <span class="price">£76</span></p>
                                     <ul class="ratings_container">
                                         <li><i class="fa-solid fa-star"></i></li>
@@ -88,15 +93,15 @@
                                         <li><i class="fa-solid fa-star"></i></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </article>
                         </a>
                     </div>
                     <div class="row">
                         <a href="#">
-                            <div class="grid_item">
-                                <img src="assets/images/hebergements/4_small/hotel-de-la-mer.jpg" alt="">
+                            <article class="grid_item">
+                                <img src="assets/images/hebergements/4_small/hotel-de-la-mer.webp" alt="Hotel de la mer">
                                 <div class="details">
-                                    <h2>Hotel de la mer</h2>
+                                    <header><h2>Hotel de la mer</h2></header>
                                     <p>Night starting at <span class="price">£46</span></p>
                                     <ul class="ratings_container">
                                         <li><i class="fa-solid fa-star"></i></li>
@@ -106,13 +111,13 @@
                                         <li><i class="fa-solid fa-star"></i></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </article>
                         </a>
                         <a href="#">
-                            <div class="grid_item">
-                                <img src="assets/images/hebergements/4_small/auberge-le-panier.jpg" alt="">
+                            <article class="grid_item">
+                                <img src="assets/images/hebergements/4_small/auberge-le-panier.webp" alt="Auberge Le Panier">
                                 <div class="details">
-                                    <h2>Auberge Le Panier</h2>
+                                    <header><h2>Auberge Le Panier</h2></header>
                                     <p>Night starting at <span class="price">£23</span></p>
                                     <ul class="ratings_container">
                                         <li><i class="fa-solid fa-star"></i></li>
@@ -122,13 +127,13 @@
                                         <li><i class="fa-solid fa-star"></i></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </article>
                         </a>
                         <a href="#">
-                            <div class="grid_item">
-                                <img src="assets/images/hebergements/4_small/hotel-chez-amina.jpg" alt="">
+                            <article class="grid_item">
+                                <img src="assets/images/hebergements/4_small/hotel-chez-amina.webp" alt="Hotel chez Amina">
                                 <div class="details">
-                                    <h2>Hotel chez Amina</h2>
+                                    <header><h2>Hotel chez Amina</h2></header>
                                     <p>Night starting at <span class="price">£96</span></p>
                                     <ul class="ratings_container">
                                         <li><i class="fa-solid fa-star"></i></li>
@@ -138,7 +143,7 @@
                                         <li><i class="fa-solid fa-star"></i></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </article>
                         </a>
                     </div>
                 </div>
@@ -149,10 +154,11 @@
                 <ul class="popular_list">
                     <li class="list_item">
                         <a href="#">
-                            <img src="assets/images/hebergements/4_small/morning-sun-hotel.jpg" alt="">
+                            <article>
+                            <img src="assets/images/hebergements/4_small/morning-sun-hotel.webp" alt="Morning Sun Hotel">
                             <div class="details">
                                 <div class="title">
-                                    <h2>Morning Sun Hotel</h2>
+                                    <header><h2>Morning Sun Hotel</h2></header>
                                     <p>Night starting at <span class="price">£128</span></p>
                                 </div>
                                 <ul class="ratings_container">
@@ -163,14 +169,16 @@
                                     <li><i class="fa-solid fa-star"></i></li>
                                 </ul>
                             </div>
+                            </article>
                         </a>
                     </li>
                     <li class="list_item">
                         <a href="#">
-                            <img src="assets/images/hebergements/4_small/au-coeur-de-leau-bed-and-breakfast.jpg" alt="">
+                            <article>
+                            <img src="assets/images/hebergements/4_small/au-coeur-de-leau-bed-and-breakfast.webp" alt="Au Coeur de l'eau Bed and Breakfast">
                             <div class="details">
                                 <div class="title">
-                                    <h2>Au Coeur de l'eau Bed and Breakfast</h2>
+                                    <header><h2>Au Coeur de l'eau Bed and Breakfast</h2></header>
                                     <p>Night starting at <span class="price">£71</span></p>
                                 </div>
                                 <ul class="ratings_container">
@@ -181,14 +189,16 @@
                                     <li><i class="fa-solid fa-star"></i></li>
                                 </ul>
                             </div>
+                            </article>
                         </a>
                     </li>
                     <li class="list_item">
                         <a href="#">
-                            <img src="assets/images/hebergements/4_small/tout-blue-et-blanc-hotel.jpg" alt="">
+                            <article>
+                            <img src="assets/images/hebergements/4_small/tout-blue-et-blanc-hotel.webp" alt="Tout bleu et Blanc Hotel">
                             <div class="details">
                                 <div class="title">
-                                    <h2>Tout bleu et Blanc Hotel</h2>
+                                    <header><h2>Tout bleu et Blanc Hotel</h2></header>
                                     <p>Night starting at <span class="price">£68</span></p>
                                 </div>
                                 <ul class="ratings_container">
@@ -199,6 +209,7 @@
                                     <li><i class="fa-solid fa-star"></i></li>
                                 </ul>
                             </div>
+                            </article>
                         </a>
                     </li>
                 </ul>
@@ -207,56 +218,60 @@
         <section id="section_activities">
             <article>
                 <header><h1>Activities in Marseille</h1></header>
-                <ul class="activities_container">
-                    <li>
-                        <a href="#">
-                            <div class="list_item">
-                                <div class="image_container"><img src="assets/images/activites/4_small/old-port.jpg" alt=""></div>
-                                <div class="details"><h2>Old Port</h2></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="large">
-                            <div class="list_item">
-                                <div class="image_container"><img src="assets/images/activites/4_small/pomegues-fort.jpg" alt=""></div>
-                                <div class="details"><h2>Pomegues Fort</h2></div>
-                            </div>
-                        </a>
-                        <a href="#" class="small">
-                            <div class="list_item">
-                                <div class="image_container"><img src="assets/images/activites/4_small/frioul-island.jpg" alt=""></div>
-                                <div class="details"><h2>Frioul Island</h2></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="list_item">
-                                <div class="image_container"><img src="assets/images/activites/4_small/calanques-national-park.jpg" alt=""></div>
-                                <div class="details"><h2>Calanques National Park</h2></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="small">
-                            <div class="list_item">
-                                <div class="image_container"><img src="assets/images/activites/4_small/notre-dame-de-la-garde.jpg" alt=""></div>
-                                <div class="details"><h2>Notre-Dame-de-la-Garde</h2></div>
-                            </div>
-                        </a>
-                        <a href="#" class="large">
-                            <div class="list_item">
-                                <div class="image_container"><img src="assets/images/activites/4_small/longchamp-park.jpg" alt=""></div>
-                                <div class="details"><h2>Longchamp Park</h2></div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                <div class="activities_container">
+                    <div class="row">
+                        <div class="item_container">
+                            <a href="#">
+                                <article class="list_item">
+                                    <div class="image_container"><img src="assets/images/activites/4_small/old-port.jpg" alt="Old Port"></div>
+                                    <header><h2>Old Port</h2></header>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="item_container">
+                            <a href="#" class="large">
+                                <article class="list_item">
+                                    <div class="image_container"><img src="assets/images/activites/4_small/pomegues-fort.jpg" alt="Pomegues Fort"></div>
+                                    <header><h2>Pomegues Fort</h2></header>
+                                </article>
+                            </a>
+                            <a href="#" class="small">
+                                <article class="list_item">
+                                    <div class="image_container"><img src="assets/images/activites/4_small/frioul-island.jpg" alt="Frioul Island"></div>
+                                    <header><h2>Frioul Island</h2></header>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="item_container">
+                            <a href="#">
+                                <article class="list_item">
+                                    <div class="image_container"><img src="assets/images/activites/4_small/calanques-national-park.jpg" alt="Calanques National Park"></div>
+                                    <header><h2>Calanques National Park</h2></header>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="item_container">
+                            <a href="#" class="small">
+                                <article class="list_item">
+                                    <div class="image_container"><img src="assets/images/activites/4_small/notre-dame-de-la-garde.jpg" alt="Notre-Dame-de-la-Garde"></div>
+                                    <header><h2>Notre-Dame-de-la-Garde</h2></header>
+                                </article>
+                            </a>
+                            <a href="#" class="large">
+                                <article class="list_item">
+                                    <div class="image_container"><img src="assets/images/activites/4_small/longchamp-park.jpg" alt="Longchamp Park"></div>
+                                    <header><h2>Longchamp Park</h2></header>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
     </main>
-    <!-- <footer>
+    <footer>
         <ul>
             <li><h2>About</h2></li>
             <li>Site Map</li>
@@ -273,6 +288,6 @@
             <li>Help Desk</li>
             <li>Contact Us</li>
         </ul>
-    </footer> -->
+    </footer>
 </body>
 </html>

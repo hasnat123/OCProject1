@@ -41,43 +41,43 @@ body h2 {
   font-size: var(--h2-font-size);
   color: var(--main-font-color-dark);
 }
-body header {
+body .main_header {
   display: flex;
   justify-content: space-between;
   height: 112px;
   padding: 0 48px;
 }
-body header img {
+body .main_header img {
   align-self: center;
   cursor: pointer;
   height: 64px;
 }
-body header nav {
+body .main_header nav {
   display: flex;
   justify-content: space-between;
   width: 300px;
 }
-body header nav ul {
+body .main_header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
   display: flex;
   list-style: none;
 }
-body header nav ul li {
+body .main_header nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   font-weight: 600;
 }
-body header nav ul li a {
+body .main_header nav ul li a {
   color: var(--main-font-color);
 }
-body header nav ul li a:hover {
+body .main_header nav ul li a:hover {
   color: var(--secondary-font-color);
 }
-body header nav ul li a::after {
+body .main_header nav ul li a::after {
   content: "";
   position: absolute;
   top: 0;
@@ -90,16 +90,16 @@ body header nav ul li a::after {
   transition: opacity 0.3s;
 }
 @media only screen and (max-width: 768px) {
-  body header nav ul li a::after {
+  body .main_header nav ul li a::after {
     width: 100%;
     top: 32px;
     height: 3px;
   }
 }
-body header nav ul li a:hover::after {
+body .main_header nav ul li a:hover::after {
   opacity: 1;
 }
-body header nav ul li a::before {
+body .main_header nav ul li a::before {
   display: none;
   content: "";
   position: absolute;
@@ -111,42 +111,42 @@ body header nav ul li a::before {
   background-color: var(--background-color);
 }
 @media only screen and (max-width: 768px) {
-  body header nav ul li a::before {
+  body .main_header nav ul li a::before {
     display: block;
   }
 }
 @media only screen and (max-width: 768px) {
-  body header nav ul li {
+  body .main_header nav ul li {
     flex: 1;
   }
 }
 @media only screen and (max-width: 992px) {
-  body header nav ul {
+  body .main_header nav ul {
     gap: 30px;
   }
 }
 @media only screen and (max-width: 768px) {
-  body header nav ul {
+  body .main_header nav ul {
     gap: 0;
   }
 }
 @media only screen and (max-width: 992px) {
-  body header nav {
+  body .main_header nav {
     width: 250px;
   }
 }
 @media only screen and (max-width: 768px) {
-  body header nav {
+  body .main_header nav {
     width: 100%;
   }
 }
 @media only screen and (max-width: 992px) {
-  body header {
+  body .main_header {
     padding: 0 20px;
   }
 }
 @media only screen and (max-width: 768px) {
-  body header {
+  body .main_header {
     height: auto;
     flex-direction: column;
     padding: 24px 0;
@@ -427,6 +427,7 @@ body main #section_accommodations .accommodations_container .accommodations_grid
   body main #section_accommodations .accommodations_container {
     background-color: #fff;
     border-radius: 0;
+    padding: 32px 20px;
   }
 }
 body main #section_accommodations .popular_container {
@@ -466,44 +467,48 @@ body main #section_accommodations .popular_container .popular_list .list_item {
   overflow: hidden;
 }
 body main #section_accommodations .popular_container .popular_list .list_item a {
+  color: var(--main-font-color);
+}
+body main #section_accommodations .popular_container .popular_list .list_item a article {
   height: 182px;
   display: flex;
   position: relative;
-  color: var(--main-font-color);
 }
-body main #section_accommodations .popular_container .popular_list .list_item a img {
+body main #section_accommodations .popular_container .popular_list .list_item a article img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 40%;
   border-radius: 19.2px 0 0 19.2px;
 }
-body main #section_accommodations .popular_container .popular_list .list_item a .details {
+body main #section_accommodations .popular_container .popular_list .list_item a article .details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 16px;
 }
-body main #section_accommodations .popular_container .popular_list .list_item a .details .title h2 {
+body main #section_accommodations .popular_container .popular_list .list_item a article .details .title h2 {
   margin-bottom: 8px;
 }
-body main #section_accommodations .popular_container .popular_list .list_item a .details .title .price {
+body main #section_accommodations .popular_container .popular_list .list_item a article .details .title .price {
   font-weight: 600;
   color: var(--main-font-color-dark);
 }
-body main #section_accommodations .popular_container .popular_list .list_item a .details .ratings_container {
+body main #section_accommodations .popular_container .popular_list .list_item a article .details .ratings_container {
   display: flex;
   list-style: none;
   color: var(--secondary-font-color);
 }
 @media only screen and (max-width: 768px) {
-  body main #section_accommodations .popular_container .popular_list {
-    justify-content: center;
-    gap: 20px;
+  body main #section_accommodations .popular_container .popular_list .list_item {
+    flex: none;
+    width: 100%;
+    min-width: 0;
   }
 }
 @media only screen and (max-width: 768px) {
   body main #section_accommodations .popular_container {
     border-radius: 0;
+    padding: 32px 20px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -525,37 +530,65 @@ body main #section_activities .activities_container {
   list-style: none;
   margin-top: 24px;
 }
-body main #section_activities .activities_container li {
+@media only screen and (max-width: 992px) {
+  body main #section_activities .activities_container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+body main #section_activities .activities_container .row {
+  flex: 1;
+  display: flex;
+  gap: clamp(20px, 2.5vw, 48px);
+}
+@media only screen and (max-width: 768px) {
+  body main #section_activities .activities_container .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+body main #section_activities .activities_container .row .item_container {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 560px;
 }
-body main #section_activities .activities_container li:nth-child(2), body main #section_activities .activities_container li:nth-child(4) {
+body main #section_activities .activities_container .row .item_container:nth-child(2), body main #section_activities .activities_container .row .item_container:nth-child(4) {
   gap: clamp(20px, 2.5vw, 48px);
 }
-body main #section_activities .activities_container li:nth-child(2) .small, body main #section_activities .activities_container li:nth-child(4) .small {
+body main #section_activities .activities_container .row .item_container:nth-child(2) .small, body main #section_activities .activities_container .row .item_container:nth-child(4) .small {
   flex: 4;
 }
-body main #section_activities .activities_container li:nth-child(2) .large, body main #section_activities .activities_container li:nth-child(4) .large {
+body main #section_activities .activities_container .row .item_container:nth-child(2) .large, body main #section_activities .activities_container .row .item_container:nth-child(4) .large {
   flex: 5;
 }
-body main #section_activities .activities_container li a {
+@media only screen and (max-width: 768px) {
+  body main #section_activities .activities_container .row .item_container:nth-child(2) .small, body main #section_activities .activities_container .row .item_container:nth-child(2) .large, body main #section_activities .activities_container .row .item_container:nth-child(4) .small, body main #section_activities .activities_container .row .item_container:nth-child(4) .large {
+    flex: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body main #section_activities .activities_container .row .item_container:nth-child(2), body main #section_activities .activities_container .row .item_container:nth-child(4) {
+    height: 520px;
+    gap: 20px;
+  }
+}
+body main #section_activities .activities_container .row .item_container a {
   color: var(--main-font-color);
   flex: 1;
 }
-body main #section_activities .activities_container li a .list_item {
+body main #section_activities .activities_container .row .item_container a .list_item {
   display: flex;
   flex-direction: column;
   height: 100%;
   box-shadow: 0 5px 20px 2px #e4e4e4;
   border-radius: 24px;
 }
-body main #section_activities .activities_container li a .list_item .image_container {
+body main #section_activities .activities_container .row .item_container a .list_item .image_container {
   position: relative;
   flex: 1;
 }
-body main #section_activities .activities_container li a .list_item .image_container img {
+body main #section_activities .activities_container .row .item_container a .list_item .image_container img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -563,25 +596,21 @@ body main #section_activities .activities_container li a .list_item .image_conta
      object-fit: cover;
   border-radius: 24px 24px 0 0;
 }
-body main #section_activities .activities_container li a .list_item .details {
+body main #section_activities .activities_container .row .item_container a .list_item header {
   display: flex;
   align-items: center;
   height: 64px;
   padding: 0 20px;
 }
-@media only screen and (max-width: 992px) {
-  body main #section_activities .activities_container li {
-    flex-direction: row;
-  }
-}
-@media only screen and (max-width: 992px) {
-  body main #section_activities .activities_container {
-    flex-wrap: wrap;
+@media only screen and (max-width: 768px) {
+  body main #section_activities .activities_container .row .item_container {
+    height: 250px;
   }
 }
 @media only screen and (max-width: 768px) {
   body main #section_activities {
     padding: 0 20px;
+    margin-top: 32px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -596,7 +625,6 @@ body main #section_activities .activities_container li a .list_item .details {
 }
 body footer {
   display: flex;
-  gap: 20%;
   margin-top: 64px;
   padding: 48px;
   background-color: #F2F2F2;
@@ -605,8 +633,21 @@ body footer ul {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex: 1;
   list-style: none;
 }
 body footer ul h2 {
-  margin-bottom: 4.8px;
+  margin-bottom: 8px;
+}
+@media only screen and (max-width: 992px) {
+  body footer {
+    padding: 48px 24px;
+    gap: 15%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body footer {
+    flex-direction: column;
+    gap: 40px;
+  }
 }/*# sourceMappingURL=styles.css.map */
