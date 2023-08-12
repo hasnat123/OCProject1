@@ -220,6 +220,11 @@ body
                         font-weight: 600;
                         outline: none;
                     
+                        &::placeholder
+                        {
+                            font-weight: 100;
+                        }
+
                         @media only screen and (max-width: 768px){
                             padding: 16px 18px;
                         }

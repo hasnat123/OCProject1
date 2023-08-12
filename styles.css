@@ -196,6 +196,12 @@ body main .section_search .searchbar form input {
   font-weight: 600;
   outline: none;
 }
+body main .section_search .searchbar form input::-moz-placeholder {
+  font-weight: 100;
+}
+body main .section_search .searchbar form input::placeholder {
+  font-weight: 100;
+}
 @media only screen and (max-width: 768px) {
   body main .section_search .searchbar form input {
     padding: 16px 18px;
