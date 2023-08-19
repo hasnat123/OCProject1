@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+
 *,
 *::before,
-*::after {
+*::after
+{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
-:root {
+:root
+{
   --main-font-family: "Raleway", sans-serif;
   --main-font-color: #515151;
   --main-font-color-dark: rgb(38, 38, 38);
@@ -16,10 +19,11 @@
   --tertiary-font-color: #DEEBFF;
   --background-color: #F2F2F2;
   --h1-font-size: clamp(24px, 2.3vw, 24px);
-  --h2-font-size: clamp(18px, 1.75vw, 19.2px);
+  --h3-font-size: clamp(18px, 1.75vw, 19.2px);
 }
 
-html {
+html
+{
   font-family: var(--main-font-family);
   font-size: 16px;
   color: var(--main-font-color);
@@ -37,21 +41,21 @@ body
   background-color: #fff;
 }
 
-body h1
+body h1, h2
 {
   font-size: var(--h1-font-size);
   color: var(--main-font-color-dark);
 }
 
-body h2
+body h3
 {
-  font-size: var(--h2-font-size);
+  font-size: var(--h3-font-size);
   color: var(--main-font-color-dark);
 }
 
 /*MAIN HEADER*/
 
-body .main_header
+body .main-header
 {
   display: flex;
   justify-content: space-between;
@@ -59,30 +63,28 @@ body .main_header
   padding: 0 48px;
 }
 
-body .main_header img
+body .main-header img
 {
   align-self: center;
   cursor: pointer;
   height: 64px;
 }
 
-body .main_header nav
+body .main-header nav
 {
   display: flex;
-  justify-content: space-between;
   width: 300px;
 }
 
-body .main_header nav ul
+body .main-header nav ul
 {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  display: flex;
   list-style: none;
 }
 
-body .main_header nav ul li
+body .main-header nav ul li
 {
   display: flex;
   justify-content: center;
@@ -91,17 +93,17 @@ body .main_header nav ul li
   font-weight: 600;
 }
 
-body .main_header nav ul li a
+body .main-header nav ul li a
 {
   color: var(--main-font-color);
 }
 
-body .main_header nav ul li a:hover
+body .main-header nav ul li a:hover
 {
   color: var(--secondary-font-color);
 }
 
-body .main_header nav ul li a::before
+body .main-header nav ul li a::before
 {
   display: none;
   content: "";
@@ -114,7 +116,7 @@ body .main_header nav ul li a::before
   background-color: var(--background-color);
 }
 
-body .main_header nav ul li a::after
+body .main-header nav ul li a::after
 {
   content: "";
   position: absolute;
@@ -128,7 +130,7 @@ body .main_header nav ul li a::after
   transition: opacity 0.3s;
 }
 
-body .main_header nav ul li a:hover::after
+body .main-header nav ul li a:hover::after
 {
   opacity: 1;
 }
@@ -139,12 +141,12 @@ body main {
 
 /*SEARCH BAR*/
 
-body main .section_search p
+body main .section-search p
 {
   margin-top: 8px;
 }
 
-body main .section_search .searchbar
+body main .section-search .searchbar
 {
   display: flex;
   width: 480px;
@@ -153,7 +155,7 @@ body main .section_search .searchbar
   border: 1px solid var(--background-color);
 }
 
-body main .section_search .searchbar .search_icon
+body main .section-search .searchbar .search-icon
 {
   display: flex;
   justify-content: center;
@@ -167,12 +169,12 @@ body main .section_search .searchbar .search_icon
   background-color: var(--background-color);
 }
 
-body main .section_search .searchbar form
+body main .section-search .searchbar form
 {
   flex: 8;
 }
 
-body main .section_search .searchbar form input
+body main .section-search .searchbar form input
 {
   width: 100%;
   padding: 12.8px 14.4px;
@@ -183,17 +185,17 @@ body main .section_search .searchbar form input
   outline: none;
 }
 
-body main .section_search .searchbar form input::-moz-placeholder
+body main .section-search .searchbar form input::-moz-placeholder
 {
   font-weight: 100;
 }
 
-body main .section_search .searchbar form input::placeholder
+body main .section-search .searchbar form input::placeholder
 {
   font-weight: 100;
 }
 
-body main .section_search .searchbar .search_btn
+body main .section-search .searchbar .search-btn
 {
   display: flex;
   justify-content: center;
@@ -207,26 +209,26 @@ body main .section_search .searchbar .search_btn
   font-size: 18px;
 }
 
-body main .section_search .searchbar .search_btn p
+body main .section-search .searchbar .search-btn p
 {
   margin: 0;
 }
 
-body main .section_search .searchbar .search_btn i
+body main .section-search .searchbar .search-btn i
 {
   display: none;
 }
 
 /*FILTERS*/
 
-body main .section_filters
+body main .section-filters
 {
   display: flex;
   align-items: center;
   color: var(--main-font-color-dark);
 }
 
-body main .section_filters .filters_list
+body main .section-filters .filters-list
 {
   display: flex;
   list-style: none;
@@ -234,28 +236,48 @@ body main .section_filters .filters_list
   margin-left: 34px;
 }
 
-body main .section_filters .filters_list .filters_item
+body main .section-filters .filters-list .filters-item
 {
   position: relative;
   display: flex;
   align-items: center;
-  border: 2.5px solid var(--background-color);
+  border: 2.5px solid #e7e7e7;
   border-radius: 20px;
   cursor: pointer;
 }
 
-body main .section_filters .filters_list .filters_item:hover > div::after
+body main .section-filters .filters-list .filters-item:nth-child(1)
+{
+  order: 1;
+}
+
+body main .section-filters .filters-list .filters-item:nth-child(2)
+{
+  order: 2;
+}
+
+body main .section-filters .filters-list .filters-item:nth-child(3)
+{
+  order: 3;
+}
+
+body main .section-filters .filters-list .filters-item:nth-child(4)
+{
+  order: 4;
+}
+
+body main .section-filters .filters-list .filters-item:hover > div::after
 {
   transform: translateX(-50%) scale(10);
 }
 
-body main .section_filters .filters_list .filters_item:hover > i
+body main .section-filters .filters-list .filters-item:hover > i
 {
   background-color: #fff;
-  border-color: var(--background-color);
+  border-color: #e7e7e7;
 }
 
-body main .section_filters .filters_list .filters_item i
+body main .section-filters .filters-list .filters-item i
 {
   position: absolute;
   display: flex;
@@ -273,7 +295,7 @@ body main .section_filters .filters_list .filters_item i
   transition: background-color 0.2s linear;
 }
 
-body main .section_filters .filters_list .filters_item div
+body main .section-filters .filters-list .filters-item div
 {
   position: relative;
   display: flex;
@@ -285,7 +307,7 @@ body main .section_filters .filters_list .filters_item div
   border-radius: 14px;
 }
 
-body main .section_filters .filters_list .filters_item div::after
+body main .section-filters .filters-list .filters-item div::after
 {
   content: "";
   position: absolute;
@@ -326,7 +348,7 @@ body main .info i
 
 /*ACCOMMODATIONS SECTION*/
 
-body main #section_accommodations
+body main #section-accommodations
 {
   display: flex;
   width: 100%;
@@ -336,7 +358,7 @@ body main #section_accommodations
   flex-wrap: wrap-reverse;
 }
 
-body main #section_accommodations .accommodations_container
+body main #section-accommodations .accommodations-container
 {
   flex: 2;
   background-color: #F2F2F2;
@@ -344,13 +366,13 @@ body main #section_accommodations .accommodations_container
   padding: 32px;
 }
 
-body main #section_accommodations .accommodations_container header
+body main #section-accommodations .accommodations-container header
 {
   height: auto;
   padding: 0;
 }
 
-body main #section_accommodations .accommodations_container .accommodations_grid
+body main #section-accommodations .accommodations-container .accommodations-grid
 {
   display: flex;
   flex-direction: column;
@@ -358,19 +380,19 @@ body main #section_accommodations .accommodations_container .accommodations_grid
   margin: 24px 0 40px 0;
 }
 
-body main #section_accommodations .accommodations_container .accommodations_grid .row
+body main #section-accommodations .accommodations-container .accommodations-grid .row
 {
   display: flex;
   gap: clamp(20px, 2.1vw, 40px);
 }
 
-body main #section_accommodations .accommodations_container .accommodations_grid .row a
+body main #section-accommodations .accommodations-container .accommodations-grid .row a
 {
   flex: 1;
   color: var(--main-font-color);
 }
 
-body main #section_accommodations .accommodations_container .accommodations_grid .row a .grid_item
+body main #section-accommodations .accommodations-container .accommodations-grid .row a .grid-item
 {
   min-width: 190px;
   height: 270px;
@@ -380,7 +402,7 @@ body main #section_accommodations .accommodations_container .accommodations_grid
   box-shadow: 0 5px 20px 2px #e4e4e4;
 }
 
-body main #section_accommodations .accommodations_container .accommodations_grid .row a .grid_item img
+body main #section-accommodations .accommodations-container .accommodations-grid .row a .grid-item img
 {
   -o-object-fit: cover;
      object-fit: cover;
@@ -389,7 +411,7 @@ body main #section_accommodations .accommodations_container .accommodations_grid
   border-radius: 19.2px 19.2px 0 0;
 }
 
-body main #section_accommodations .accommodations_container .accommodations_grid .row a .grid_item .details
+body main #section-accommodations .accommodations-container .accommodations-grid .row a .grid-item .details
 {
   position: relative;
   display: flex;
@@ -399,26 +421,31 @@ body main #section_accommodations .accommodations_container .accommodations_grid
   height: 40%;
 }
 
-body main #section_accommodations .accommodations_container .accommodations_grid .row a .grid_item .details .price
+body main #section-accommodations .accommodations-container .accommodations-grid .row a .grid-item .details .price
 {
   font-weight: 600;
   color: var(--main-font-color-dark);
 }
 
-body main #section_accommodations .accommodations_container .accommodations_grid .row a .grid_item .details .ratings_container
+body main #section-accommodations .accommodations-container .accommodations-grid .row a .grid-item .details .ratings-container
 {
   display: flex;
   bottom: 16px;
   list-style: none;
+  color: #d8d8d8;
+}
+
+body main #section-accommodations .accommodations-container .accommodations-grid .row a .grid-item .details .ratings-container li .filled
+{
   color: var(--secondary-font-color);
 }
 
-body main #section_accommodations .accommodations_container #show_more a
+body main #section-accommodations .accommodations-container #show-more a
 {
   color: var(--main-font-color-dark);
 }
 
-body main #section_accommodations .popular_container
+body main #section-accommodations .popular-container
 {
   display: flex;
   flex-direction: column;
@@ -428,7 +455,7 @@ body main #section_accommodations .popular_container
   padding: 32px;
 }
 
-body main #section_accommodations .popular_container .header_container
+body main #section-accommodations .popular-container .header-container
 {
   display: flex;
   align-items: center;
@@ -436,13 +463,13 @@ body main #section_accommodations .popular_container .header_container
   width: 100%;
 }
 
-body main #section_accommodations .popular_container .header_container i
+body main #section-accommodations .popular-container .header-container i
 {
   font-size: 20px;
   color: var(--main-font-color-dark);
 }
 
-body main #section_accommodations .popular_container .popular_list
+body main #section-accommodations .popular-container .popular-list
 {
   display: flex;
   list-style: none;
@@ -452,7 +479,7 @@ body main #section_accommodations .popular_container .popular_list
   margin-top: 24px;
 }
 
-body main #section_accommodations .popular_container .popular_list .list_item
+body main #section-accommodations .popular-container .popular-list .list-item
 {
   flex: 1;
   min-width: 345px;
@@ -464,19 +491,19 @@ body main #section_accommodations .popular_container .popular_list .list_item
   overflow: hidden;
 }
 
-body main #section_accommodations .popular_container .popular_list .list_item a
+body main #section-accommodations .popular-container .popular-list .list-item a
 {
   color: var(--main-font-color);
 }
 
-body main #section_accommodations .popular_container .popular_list .list_item a article
+body main #section-accommodations .popular-container .popular-list .list-item a article
 {
   height: 182px;
   display: flex;
   position: relative;
 }
 
-body main #section_accommodations .popular_container .popular_list .list_item a article img
+body main #section-accommodations .popular-container .popular-list .list-item a article img
 {
   -o-object-fit: cover;
      object-fit: cover;
@@ -484,7 +511,7 @@ body main #section_accommodations .popular_container .popular_list .list_item a 
   border-radius: 19.2px 0 0 19.2px;
 }
 
-body main #section_accommodations .popular_container .popular_list .list_item a article .details
+body main #section-accommodations .popular-container .popular-list .list-item a article .details
 {
   display: flex;
   flex-direction: column;
@@ -492,38 +519,43 @@ body main #section_accommodations .popular_container .popular_list .list_item a 
   padding: 10px 16px;
 }
 
-body main #section_accommodations .popular_container .popular_list .list_item a article .details .title h2
+body main #section-accommodations .popular-container .popular-list .list-item a article .details .title h3
 {
   margin-bottom: 8px;
 }
 
-body main #section_accommodations .popular_container .popular_list .list_item a article .details .title .price
+body main #section-accommodations .popular-container .popular-list .list-item a article .details .title .price
 {
   font-weight: 600;
   color: var(--main-font-color-dark);
 }
 
-body main #section_accommodations .popular_container .popular_list .list_item a article .details .ratings_container
+body main #section-accommodations .popular-container .popular-list .list-item a article .details .ratings-container
 {
   display: flex;
   list-style: none;
+  color: #d8d8d8;
+}
+
+body main #section-accommodations .popular-container .popular-list .list-item a article .details .ratings-container li .filled
+{
   color: var(--secondary-font-color);
 }
 
 /*ACTIVITIES SECTION*/
 
-body main #section_activities
+body main #section-activities
 {
   margin-top: 64px;
 }
 
-body main #section_activities header
+body main #section-activities header
 {
   height: auto;
   padding: 0;
 }
 
-body main #section_activities .activities_container
+body main #section-activities .activities-container
 {
   display: flex;
   gap: clamp(20px, 2.5vw, 48px);
@@ -531,14 +563,14 @@ body main #section_activities .activities_container
   margin-top: 24px;
 }
 
-body main #section_activities .activities_container .row
+body main #section-activities .activities-container .row
 {
   flex: 1;
   display: flex;
   gap: clamp(20px, 2.5vw, 48px);
 }
 
-body main #section_activities .activities_container .row .item_container
+body main #section-activities .activities-container .row .item-container
 {
   display: flex;
   flex-direction: column;
@@ -546,28 +578,28 @@ body main #section_activities .activities_container .row .item_container
   height: 560px;
 }
 
-body main #section_activities .activities_container .row .item_container:nth-child(2), body main #section_activities .activities_container .row .item_container:nth-child(4)
+body main #section-activities .activities-container .row .item-container:nth-child(2), body main #section-activities .activities-container .row .item-container:nth-child(4)
 {
   gap: clamp(20px, 2.5vw, 48px);
 }
 
-body main #section_activities .activities_container .row .item_container:nth-child(2) .small, body main #section_activities .activities_container .row .item_container:nth-child(4) .small
+body main #section-activities .activities-container .row .item-container:nth-child(2) .small, body main #section-activities .activities-container .row .item-container:nth-child(4) .small
 {
   flex: 4;
 }
 
-body main #section_activities .activities_container .row .item_container:nth-child(2) .large, body main #section_activities .activities_container .row .item_container:nth-child(4) .large
+body main #section-activities .activities-container .row .item-container:nth-child(2) .large, body main #section-activities .activities-container .row .item-container:nth-child(4) .large
 {
   flex: 5;
 }
 
-body main #section_activities .activities_container .row .item_container a
+body main #section-activities .activities-container .row .item-container a
 {
   color: var(--main-font-color);
   flex: 1;
 }
 
-body main #section_activities .activities_container .row .item_container a .list_item
+body main #section-activities .activities-container .row .item-container a .list-item
 {
   display: flex;
   flex-direction: column;
@@ -576,13 +608,13 @@ body main #section_activities .activities_container .row .item_container a .list
   border-radius: 24px;
 }
 
-body main #section_activities .activities_container .row .item_container a .list_item .image_container
+body main #section-activities .activities-container .row .item-container a .list-item .image-container
 {
   position: relative;
   flex: 1;
 }
 
-body main #section_activities .activities_container .row .item_container a .list_item .image_container img
+body main #section-activities .activities-container .row .item-container a .list-item .image-container img
 {
   position: absolute;
   width: 100%;
@@ -592,7 +624,7 @@ body main #section_activities .activities_container .row .item_container a .list
   border-radius: 24px 24px 0 0;
 }
 
-body main #section_activities .activities_container .row .item_container a .list_item header
+body main #section-activities .activities-container .row .item-container a .list-item figcaption
 {
   display: flex;
   align-items: center;
@@ -617,7 +649,7 @@ body footer ul {
   list-style: none;
 }
 
-body footer ul h2 {
+body footer ul h3 {
   margin-bottom: 8px;
 }
 
@@ -633,17 +665,17 @@ body footer ul li a
 
   /*MAIN HEADER*/
 
-  body .main_header
+  body .main-header
   {
     padding: 0 20px;
   }
   
-  body .main_header nav
+  body .main-header nav
   {
     width: 250px;
   }
 
-  body .main_header nav ul
+  body .main-header nav ul
   {
     gap: 30px;
   }
@@ -655,14 +687,14 @@ body footer ul li a
 
   /*FILTERS*/
 
-  body main .section_filters
+  body main .section-filters
   {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
   }
 
-  body main .section_filters .filters_list
+  body main .section-filters .filters-list
   {
     justify-content: flex-start;
     margin: 0;
@@ -672,7 +704,7 @@ body footer ul li a
 
   /*ACTIVITIES SECTION*/
 
-  body main #section_activities .activities_container
+  body main #section-activities .activities-container
   {
     flex-direction: column;
     gap: 20px;
@@ -696,7 +728,7 @@ body footer ul li a
 
   /*MAIN HEADER*/
 
-  body .main_header
+  body .main-header
   {
     height: auto;
     flex-direction: column;
@@ -705,27 +737,27 @@ body footer ul li a
     margin-bottom: 20px;
   }
 
-  body .main_header nav
+  body .main-header nav
   {
     width: 100%;
   }
 
-  body .main_header nav ul
+  body .main-header nav ul
   {
     gap: 0;
   }
 
-  body .main_header nav ul li
+  body .main-header nav ul li
   {
     flex: 1;
   }
 
-  body .main_header nav ul li a::before
+  body .main-header nav ul li a::before
   {
     display: block;
   }
 
-  body .main_header nav ul li a::after
+  body .main-header nav ul li a::after
   {
     width: 100%;
     top: 32px;
@@ -739,12 +771,12 @@ body footer ul li a
 
   /*SEARCH BAR*/
 
-  body main .section_search
+  body main .section-search
   {
     padding: 0 20px;
   }
 
-  body main .section_search .searchbar
+  body main .section-search .searchbar
   {
     border-radius: 16px;
     width: 100%;
@@ -752,40 +784,51 @@ body footer ul li a
     margin: 30px 0;
   }
 
-  body main .section_search .searchbar .search_icon
+  body main .section-search .searchbar .search-icon
   {
     padding: 16px 18px;
     border-radius: 16px 0 0 16px;
   }
 
-  body main .section_search .searchbar form input
+  body main .section-search .searchbar form input
   {
     padding: 16px 18px;
   }
 
-  body main .section_search .searchbar .search_btn
+  body main .section-search .searchbar .search-btn
   {
     border-radius: 16px;
     flex: 0;
     padding: 16px 18px;
   }
 
-  body main .section_search .searchbar .search_btn i
+  body main .section-search .searchbar .search-btn i
   {
     display: block;
   }
 
-  body main .section_search .searchbar .search_btn p
+  body main .section-search .searchbar .search-btn p
   {
     display: none;
   }
 
   /*FILTERS*/
 
-  body main .section_filters
+  body main .section-filters
   {
     padding: 0 20px;
   }
+
+  body main .section-filters .filters-list .filters-item:nth-child(2)
+  {
+    order: 3;
+  }
+
+  body main .section-filters .filters-list .filters-item:nth-child(3)
+  {
+    order: 2;
+  }
+
 
   /*INFO TEXT*/
 
@@ -803,63 +846,68 @@ body footer ul li a
 
   /*ACCOMMODATIONS SECTION*/
 
-  body main #section_accommodations
+  body main #section-accommodations
   {
     flex-direction: column-reverse;
     gap: 0;
   }
 
-  body main #section_accommodations .accommodations_container
+  body main #section-accommodations .accommodations-container
   {
     background-color: #fff;
     border-radius: 0;
     padding: 32px 20px;
   }
 
-  body main #section_accommodations .accommodations_container .accommodations_grid .row
+  body main #section-accommodations .accommodations-container .accommodations-grid .row
   {
     flex-direction: column;
   }
 
-  body main #section_accommodations .popular_container
+  body main #section-accommodations .popular-container
   {
     border-radius: 0;
     padding: 32px 20px;
   }
 
-  body main #section_accommodations .popular_container .popular_list .list_item
+  body main #section-accommodations .popular-container .popular-list .list-item
   {
     flex: none;
     width: 100%;
     min-width: 0;
   }
 
+  body main #section-accommodations .popular-container .popular-list .list-item a article .details .title p
+  {
+    line-height: 22px;
+  }
+
   /*ACTIVITIES SECTION*/
 
-  body main #section_activities
+  body main #section-activities
   {
     padding: 0 20px;
     margin-top: 32px;
   }
 
-  body main #section_activities .activities_container .row
+  body main #section-activities .activities-container .row
   {
     flex-direction: column;
     gap: 20px;
   }
 
-  body main #section_activities .activities_container .row .item_container
+  body main #section-activities .activities-container .row .item-container
   {
     height: 250px;
   }
 
-  body main #section_activities .activities_container .row .item_container:nth-child(2), body main #section_activities .activities_container .row .item_container:nth-child(4)
+  body main #section-activities .activities-container .row .item-container:nth-child(2), body main #section-activities .activities-container .row .item-container:nth-child(4)
   {
     height: 520px;
     gap: 20px;
   }
 
-  body main #section_activities .activities_container .row .item_container:nth-child(2) .small, body main #section_activities .activities_container .row .item_container:nth-child(2) .large, body main #section_activities .activities_container .row .item_container:nth-child(4) .small, body main #section_activities .activities_container .row .item_container:nth-child(4) .large
+  body main #section-activities .activities-container .row .item-container:nth-child(2) .small, body main #section-activities .activities-container .row .item-container:nth-child(2) .large, body main #section-activities .activities-container .row .item-container:nth-child(4) .small, body main #section-activities .activities-container .row .item-container:nth-child(4) .large
   {
     flex: 1;
   }
