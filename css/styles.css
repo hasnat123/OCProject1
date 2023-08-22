@@ -41,21 +41,21 @@ body
   background-color: #fff;
 }
 
-body h1, h2
+h1, h2
 {
   font-size: var(--h1-font-size);
   color: var(--main-font-color-dark);
 }
 
-body h3
+h3
 {
   font-size: var(--h3-font-size);
   color: var(--main-font-color-dark);
 }
 
-/*MAIN HEADER*/
+/*HEADER*/
 
-body .main-header
+.main-header
 {
   display: flex;
   justify-content: space-between;
@@ -63,20 +63,20 @@ body .main-header
   padding: 0 48px;
 }
 
-body .main-header img
+.main-header img
 {
   align-self: center;
   cursor: pointer;
   height: 64px;
 }
 
-body .main-header nav
+nav
 {
   display: flex;
   width: 300px;
 }
 
-body .main-header nav ul
+nav ul
 {
   display: flex;
   justify-content: space-around;
@@ -84,7 +84,7 @@ body .main-header nav ul
   list-style: none;
 }
 
-body .main-header nav ul li
+nav ul li
 {
   display: flex;
   justify-content: center;
@@ -93,17 +93,17 @@ body .main-header nav ul li
   font-weight: 600;
 }
 
-body .main-header nav ul li a
+nav ul li a
 {
   color: var(--main-font-color);
 }
 
-body .main-header nav ul li a:hover
+nav ul li a:hover
 {
   color: var(--secondary-font-color);
 }
 
-body .main-header nav ul li a::before
+nav ul li a::before
 {
   display: none;
   content: "";
@@ -116,7 +116,7 @@ body .main-header nav ul li a::before
   background-color: var(--background-color);
 }
 
-body .main-header nav ul li a::after
+nav ul li a::after
 {
   content: "";
   position: absolute;
@@ -130,23 +130,24 @@ body .main-header nav ul li a::after
   transition: opacity 0.3s;
 }
 
-body .main-header nav ul li a:hover::after
+nav ul li a:hover::after
 {
   opacity: 1;
 }
 
-body main {
+main
+{
   padding: 0 48px;
 }
 
 /*SEARCH BAR*/
 
-body main .section-search p
+.section-search p
 {
   margin-top: 8px;
 }
 
-body main .section-search .searchbar
+.searchbar
 {
   display: flex;
   width: 480px;
@@ -155,7 +156,7 @@ body main .section-search .searchbar
   border: 1px solid var(--background-color);
 }
 
-body main .section-search .searchbar .search-icon
+.searchbar .search-icon
 {
   display: flex;
   justify-content: center;
@@ -169,15 +170,17 @@ body main .section-search .searchbar .search-icon
   background-color: var(--background-color);
 }
 
-body main .section-search .searchbar form
+.searchbar form
 {
-  flex: 8;
+  display: flex;
+  flex: 11;
 }
 
-body main .section-search .searchbar form input
+.searchbar form input
 {
   width: 100%;
   padding: 12.8px 14.4px;
+  flex: 3.7;
   border: none;
   color: var(--main-font-color-dark);
   font-size: 20px;
@@ -185,23 +188,24 @@ body main .section-search .searchbar form input
   outline: none;
 }
 
-body main .section-search .searchbar form input::-moz-placeholder
+.searchbar form input::-moz-placeholder
 {
   font-weight: 100;
 }
 
-body main .section-search .searchbar form input::placeholder
+.searchbar form input::placeholder
 {
   font-weight: 100;
 }
 
-body main .section-search .searchbar .search-btn
+.searchbar .search-btn
 {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  flex: 2;
+  border: none;
+  flex: 1;
   border-radius: 0 19.2px 19.2px 0;
   padding: 12.8px 14.4px;
   background: var(--secondary-font-color);
@@ -209,26 +213,26 @@ body main .section-search .searchbar .search-btn
   font-size: 18px;
 }
 
-body main .section-search .searchbar .search-btn p
+.searchbar .search-btn p
 {
   margin: 0;
 }
 
-body main .section-search .searchbar .search-btn i
+.searchbar .search-btn i
 {
   display: none;
 }
 
 /*FILTERS*/
 
-body main .section-filters
+.section-filters
 {
   display: flex;
   align-items: center;
   color: var(--main-font-color-dark);
 }
 
-body main .section-filters .filters-list
+.filters-list
 {
   display: flex;
   list-style: none;
@@ -236,7 +240,7 @@ body main .section-filters .filters-list
   margin-left: 34px;
 }
 
-body main .section-filters .filters-list .filters-item
+.filters-item
 {
   position: relative;
   display: flex;
@@ -246,38 +250,38 @@ body main .section-filters .filters-list .filters-item
   cursor: pointer;
 }
 
-body main .section-filters .filters-list .filters-item:nth-child(1)
+.filters-item:nth-child(1)
 {
   order: 1;
 }
 
-body main .section-filters .filters-list .filters-item:nth-child(2)
+.filters-item:nth-child(2)
 {
   order: 2;
 }
 
-body main .section-filters .filters-list .filters-item:nth-child(3)
+.filters-item:nth-child(3)
 {
   order: 3;
 }
 
-body main .section-filters .filters-list .filters-item:nth-child(4)
+.filters-item:nth-child(4)
 {
   order: 4;
 }
 
-body main .section-filters .filters-list .filters-item:hover > div::after
+.filters-item:hover > div::after
 {
   transform: translateX(-50%) scale(10);
 }
 
-body main .section-filters .filters-list .filters-item:hover > i
+.filters-item:hover > i
 {
   background-color: #fff;
   border-color: #e7e7e7;
 }
 
-body main .section-filters .filters-list .filters-item i
+.filters-item i
 {
   position: absolute;
   display: flex;
@@ -295,7 +299,7 @@ body main .section-filters .filters-list .filters-item i
   transition: background-color 0.2s linear;
 }
 
-body main .section-filters .filters-list .filters-item div
+.filters-item div
 {
   position: relative;
   display: flex;
@@ -307,7 +311,7 @@ body main .section-filters .filters-list .filters-item div
   border-radius: 14px;
 }
 
-body main .section-filters .filters-list .filters-item div::after
+.filters-item div::after
 {
   content: "";
   position: absolute;
@@ -324,7 +328,7 @@ body main .section-filters .filters-list .filters-item div::after
 
 /*INFO TEXT*/
 
-body main .info
+.info
 {
   display: flex;
   align-items: center;
@@ -332,7 +336,7 @@ body main .info
   gap: 16px;
 }
 
-body main .info i
+.info i
 {
   display: flex;
   align-items: center;
@@ -348,7 +352,7 @@ body main .info i
 
 /*ACCOMMODATIONS SECTION*/
 
-body main #section-accommodations
+#section-accommodations
 {
   display: flex;
   width: 100%;
@@ -358,7 +362,7 @@ body main #section-accommodations
   flex-wrap: wrap-reverse;
 }
 
-body main #section-accommodations .accommodations-container
+.accommodations-container
 {
   flex: 2;
   background-color: #F2F2F2;
@@ -366,13 +370,13 @@ body main #section-accommodations .accommodations-container
   padding: 32px;
 }
 
-body main #section-accommodations .accommodations-container header
+.accommodations-container header
 {
   height: auto;
   padding: 0;
 }
 
-body main #section-accommodations .accommodations-container .accommodations-grid
+.accommodations-grid
 {
   display: flex;
   flex-direction: column;
@@ -380,19 +384,19 @@ body main #section-accommodations .accommodations-container .accommodations-grid
   margin: 24px 0 40px 0;
 }
 
-body main #section-accommodations .accommodations-container .accommodations-grid .row
+.accommodations-grid .row
 {
   display: flex;
   gap: clamp(20px, 2.1vw, 40px);
 }
 
-body main #section-accommodations .accommodations-container .accommodations-grid .row a
+.accommodations-grid .row a
 {
   flex: 1;
   color: var(--main-font-color);
 }
 
-body main #section-accommodations .accommodations-container .accommodations-grid .row a .grid-item
+.grid-item
 {
   min-width: 190px;
   height: 270px;
@@ -402,7 +406,7 @@ body main #section-accommodations .accommodations-container .accommodations-grid
   box-shadow: 0 5px 20px 2px #e4e4e4;
 }
 
-body main #section-accommodations .accommodations-container .accommodations-grid .row a .grid-item img
+.grid-item img
 {
   -o-object-fit: cover;
      object-fit: cover;
@@ -411,7 +415,7 @@ body main #section-accommodations .accommodations-container .accommodations-grid
   border-radius: 19.2px 19.2px 0 0;
 }
 
-body main #section-accommodations .accommodations-container .accommodations-grid .row a .grid-item .details
+.grid-item .details
 {
   position: relative;
   display: flex;
@@ -421,13 +425,13 @@ body main #section-accommodations .accommodations-container .accommodations-grid
   height: 40%;
 }
 
-body main #section-accommodations .accommodations-container .accommodations-grid .row a .grid-item .details .price
+.grid-item .details .price
 {
   font-weight: 600;
   color: var(--main-font-color-dark);
 }
 
-body main #section-accommodations .accommodations-container .accommodations-grid .row a .grid-item .details .ratings-container
+.grid-item .details .ratings-container
 {
   display: flex;
   bottom: 16px;
@@ -435,17 +439,17 @@ body main #section-accommodations .accommodations-container .accommodations-grid
   color: #d8d8d8;
 }
 
-body main #section-accommodations .accommodations-container .accommodations-grid .row a .grid-item .details .ratings-container li .filled
+.grid-item .details .ratings-container li .filled
 {
   color: var(--secondary-font-color);
 }
 
-body main #section-accommodations .accommodations-container #show-more a
+#show-more a
 {
   color: var(--main-font-color-dark);
 }
 
-body main #section-accommodations .popular-container
+.popular-container
 {
   display: flex;
   flex-direction: column;
@@ -455,7 +459,7 @@ body main #section-accommodations .popular-container
   padding: 32px;
 }
 
-body main #section-accommodations .popular-container .header-container
+.popular-container .header-container
 {
   display: flex;
   align-items: center;
@@ -463,13 +467,13 @@ body main #section-accommodations .popular-container .header-container
   width: 100%;
 }
 
-body main #section-accommodations .popular-container .header-container i
+.popular-container .header-container i
 {
   font-size: 20px;
   color: var(--main-font-color-dark);
 }
 
-body main #section-accommodations .popular-container .popular-list
+.popular-list
 {
   display: flex;
   list-style: none;
@@ -479,7 +483,7 @@ body main #section-accommodations .popular-container .popular-list
   margin-top: 24px;
 }
 
-body main #section-accommodations .popular-container .popular-list .list-item
+.popular-list .list-item
 {
   flex: 1;
   min-width: 345px;
@@ -491,19 +495,19 @@ body main #section-accommodations .popular-container .popular-list .list-item
   overflow: hidden;
 }
 
-body main #section-accommodations .popular-container .popular-list .list-item a
+.popular-list .list-item a
 {
   color: var(--main-font-color);
 }
 
-body main #section-accommodations .popular-container .popular-list .list-item a article
+.popular-list .list-item a article
 {
   height: 182px;
   display: flex;
   position: relative;
 }
 
-body main #section-accommodations .popular-container .popular-list .list-item a article img
+.popular-list .list-item a article img
 {
   -o-object-fit: cover;
      object-fit: cover;
@@ -511,7 +515,7 @@ body main #section-accommodations .popular-container .popular-list .list-item a 
   border-radius: 19.2px 0 0 19.2px;
 }
 
-body main #section-accommodations .popular-container .popular-list .list-item a article .details
+.popular-list .list-item a article .details
 {
   display: flex;
   flex-direction: column;
@@ -519,43 +523,43 @@ body main #section-accommodations .popular-container .popular-list .list-item a 
   padding: 10px 16px;
 }
 
-body main #section-accommodations .popular-container .popular-list .list-item a article .details .title h3
+.popular-list .list-item a article .details .title h3
 {
   margin-bottom: 8px;
 }
 
-body main #section-accommodations .popular-container .popular-list .list-item a article .details .title .price
+.popular-list .list-item a article .details .title .price
 {
   font-weight: 600;
   color: var(--main-font-color-dark);
 }
 
-body main #section-accommodations .popular-container .popular-list .list-item a article .details .ratings-container
+.popular-list .list-item a article .details .ratings-container
 {
   display: flex;
   list-style: none;
   color: #d8d8d8;
 }
 
-body main #section-accommodations .popular-container .popular-list .list-item a article .details .ratings-container li .filled
+.popular-list .list-item a article .details .ratings-container li .filled
 {
   color: var(--secondary-font-color);
 }
 
 /*ACTIVITIES SECTION*/
 
-body main #section-activities
+#section-activities
 {
   margin-top: 64px;
 }
 
-body main #section-activities header
+#section-activities header
 {
   height: auto;
   padding: 0;
 }
 
-body main #section-activities .activities-container
+.activities-container
 {
   display: flex;
   gap: clamp(20px, 2.5vw, 48px);
@@ -563,14 +567,14 @@ body main #section-activities .activities-container
   margin-top: 24px;
 }
 
-body main #section-activities .activities-container .row
+.activities-container .row
 {
   flex: 1;
   display: flex;
   gap: clamp(20px, 2.5vw, 48px);
 }
 
-body main #section-activities .activities-container .row .item-container
+.activities-container .row .item-container
 {
   display: flex;
   flex-direction: column;
@@ -578,28 +582,28 @@ body main #section-activities .activities-container .row .item-container
   height: 560px;
 }
 
-body main #section-activities .activities-container .row .item-container:nth-child(2), body main #section-activities .activities-container .row .item-container:nth-child(4)
+.activities-container .row .item-container:nth-child(2), .activities-container .row .item-container:nth-child(4)
 {
   gap: clamp(20px, 2.5vw, 48px);
 }
 
-body main #section-activities .activities-container .row .item-container:nth-child(2) .small, body main #section-activities .activities-container .row .item-container:nth-child(4) .small
+.activities-container .row .item-container:nth-child(2) .small, .activities-container .row .item-container:nth-child(4) .small
 {
   flex: 4;
 }
 
-body main #section-activities .activities-container .row .item-container:nth-child(2) .large, body main #section-activities .activities-container .row .item-container:nth-child(4) .large
+.activities-container .row .item-container:nth-child(2) .large, .activities-container .row .item-container:nth-child(4) .large
 {
   flex: 5;
 }
 
-body main #section-activities .activities-container .row .item-container a
+.activities-container .row .item-container a
 {
   color: var(--main-font-color);
   flex: 1;
 }
 
-body main #section-activities .activities-container .row .item-container a .list-item
+.activities-container .row .item-container a .list-item
 {
   display: flex;
   flex-direction: column;
@@ -608,13 +612,13 @@ body main #section-activities .activities-container .row .item-container a .list
   border-radius: 24px;
 }
 
-body main #section-activities .activities-container .row .item-container a .list-item .image-container
+.activities-container .row .item-container a .list-item .image-container
 {
   position: relative;
   flex: 1;
 }
 
-body main #section-activities .activities-container .row .item-container a .list-item .image-container img
+.activities-container .row .item-container a .list-item .image-container img
 {
   position: absolute;
   width: 100%;
@@ -624,7 +628,7 @@ body main #section-activities .activities-container .row .item-container a .list
   border-radius: 24px 24px 0 0;
 }
 
-body main #section-activities .activities-container .row .item-container a .list-item figcaption
+.activities-container .row .item-container a .list-item figcaption
 {
   display: flex;
   align-items: center;
@@ -634,14 +638,14 @@ body main #section-activities .activities-container .row .item-container a .list
 
 /*FOOTER*/
 
-body footer {
+footer {
   display: flex;
   margin-top: 64px;
   padding: 48px;
   background-color: #F2F2F2;
 }
 
-body footer ul {
+footer ul {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -649,11 +653,11 @@ body footer ul {
   list-style: none;
 }
 
-body footer ul h3 {
+footer ul h3 {
   margin-bottom: 8px;
 }
 
-body footer ul li a
+footer ul li a
 {
   color: var(--main-font-color);
 }
@@ -663,38 +667,38 @@ body footer ul li a
 
 @media only screen and (max-width: 992px) {
 
-  /*MAIN HEADER*/
+  /*HEADER*/
 
-  body .main-header
+  .main-header
   {
     padding: 0 20px;
   }
   
-  body .main-header nav
+  nav
   {
     width: 250px;
   }
 
-  body .main-header nav ul
+  nav ul
   {
     gap: 30px;
   }
 
-  body main
+  main
   {
     padding: 0 20px;
   }
 
   /*FILTERS*/
 
-  body main .section-filters
+  .section-filters
   {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
   }
 
-  body main .section-filters .filters-list
+  .filters-list
   {
     justify-content: flex-start;
     margin: 0;
@@ -704,7 +708,7 @@ body footer ul li a
 
   /*ACTIVITIES SECTION*/
 
-  body main #section-activities .activities-container
+  .activities-container
   {
     flex-direction: column;
     gap: 20px;
@@ -712,7 +716,7 @@ body footer ul li a
 
   /*FOOTER*/
 
-  body footer
+  footer
   {
     padding: 48px 24px;
     gap: 15%;
@@ -726,9 +730,9 @@ body footer ul li a
 
 @media only screen and (max-width: 768px) {
 
-  /*MAIN HEADER*/
+  /*HEADER*/
 
-  body .main-header
+  .main-header
   {
     height: auto;
     flex-direction: column;
@@ -737,46 +741,46 @@ body footer ul li a
     margin-bottom: 20px;
   }
 
-  body .main-header nav
+  nav
   {
     width: 100%;
   }
 
-  body .main-header nav ul
+  nav ul
   {
     gap: 0;
   }
 
-  body .main-header nav ul li
+  nav ul li
   {
     flex: 1;
   }
 
-  body .main-header nav ul li a::before
+  nav ul li a::before
   {
     display: block;
   }
 
-  body .main-header nav ul li a::after
+  nav ul li a::after
   {
     width: 100%;
     top: 32px;
     height: 3px;
   }
 
-  body main
+  main
   {
     padding: 0;
   }
 
   /*SEARCH BAR*/
 
-  body main .section-search
+  .section-search
   {
     padding: 0 20px;
   }
 
-  body main .section-search .searchbar
+  .searchbar
   {
     border-radius: 16px;
     width: 100%;
@@ -784,47 +788,47 @@ body footer ul li a
     margin: 30px 0;
   }
 
-  body main .section-search .searchbar .search-icon
+  .searchbar .search-icon
   {
     padding: 16px 18px;
     border-radius: 16px 0 0 16px;
   }
 
-  body main .section-search .searchbar form input
+  .searchbar form input
   {
     padding: 16px 18px;
   }
 
-  body main .section-search .searchbar .search-btn
+  .searchbar .search-btn
   {
     border-radius: 16px;
     flex: 0;
     padding: 16px 18px;
   }
 
-  body main .section-search .searchbar .search-btn i
+  .searchbar .search-btn i
   {
     display: block;
   }
 
-  body main .section-search .searchbar .search-btn p
+  .searchbar .search-btn p
   {
     display: none;
   }
 
   /*FILTERS*/
 
-  body main .section-filters
+  .section-filters
   {
     padding: 0 20px;
   }
 
-  body main .section-filters .filters-list .filters-item:nth-child(2)
+  .filters-item:nth-child(2)
   {
     order: 3;
   }
 
-  body main .section-filters .filters-list .filters-item:nth-child(3)
+  .filters-item:nth-child(3)
   {
     order: 2;
   }
@@ -832,12 +836,12 @@ body footer ul li a
 
   /*INFO TEXT*/
 
-  body main .info
+  .info
   {
     padding: 0 20px;
   }
 
-  body main .info i
+  .info i
   {
     font-size: 17px;
     min-width: 27.2px;
@@ -846,75 +850,75 @@ body footer ul li a
 
   /*ACCOMMODATIONS SECTION*/
 
-  body main #section-accommodations
+  #section-accommodations
   {
     flex-direction: column-reverse;
     gap: 0;
   }
 
-  body main #section-accommodations .accommodations-container
+  .accommodations-container
   {
     background-color: #fff;
     border-radius: 0;
     padding: 32px 20px;
   }
 
-  body main #section-accommodations .accommodations-container .accommodations-grid .row
+  .accommodations-grid .row
   {
     flex-direction: column;
   }
 
-  body main #section-accommodations .popular-container
+  .popular-container
   {
     border-radius: 0;
     padding: 32px 20px;
   }
 
-  body main #section-accommodations .popular-container .popular-list .list-item
+  .popular-list .list-item
   {
     flex: none;
     width: 100%;
     min-width: 0;
   }
 
-  body main #section-accommodations .popular-container .popular-list .list-item a article .details .title p
+  .popular-list .list-item a article .details .title p
   {
     line-height: 22px;
   }
 
   /*ACTIVITIES SECTION*/
 
-  body main #section-activities
+  #section-activities
   {
     padding: 0 20px;
     margin-top: 32px;
   }
 
-  body main #section-activities .activities-container .row
+  .activities-container .row
   {
     flex-direction: column;
     gap: 20px;
   }
 
-  body main #section-activities .activities-container .row .item-container
+  .activities-container .row .item-container
   {
     height: 250px;
   }
 
-  body main #section-activities .activities-container .row .item-container:nth-child(2), body main #section-activities .activities-container .row .item-container:nth-child(4)
+  .activities-container .row .item-container:nth-child(2), #section-activities .activities-container .row .item-container:nth-child(4)
   {
     height: 520px;
     gap: 20px;
   }
 
-  body main #section-activities .activities-container .row .item-container:nth-child(2) .small, body main #section-activities .activities-container .row .item-container:nth-child(2) .large, body main #section-activities .activities-container .row .item-container:nth-child(4) .small, body main #section-activities .activities-container .row .item-container:nth-child(4) .large
+  .activities-container .row .item-container:nth-child(2) .small, #section-activities .activities-container .row .item-container:nth-child(2) .large, #section-activities .activities-container .row .item-container:nth-child(4) .small, #section-activities .activities-container .row .item-container:nth-child(4) .large
   {
     flex: 1;
   }
 
   /*FOOTER*/
 
-  body footer
+  footer
   {
     flex-direction: column;
     gap: 40px;
