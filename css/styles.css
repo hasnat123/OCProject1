@@ -213,11 +213,6 @@ main
   font-size: 18px;
 }
 
-.searchbar .search-btn p
-{
-  margin: 0;
-}
-
 .searchbar .search-btn i
 {
   display: none;
@@ -811,7 +806,7 @@ footer ul li a
     display: block;
   }
 
-  .searchbar .search-btn p
+  .searchbar .search-btn span
   {
     display: none;
   }
